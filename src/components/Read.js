@@ -114,12 +114,12 @@ const Read = () => {
 
                       )
                     })
+
                     :
                     
                     <div className="noData">
                       <h1>No Data to show.....</h1>                      
                     </div>
-                    
 
                   }
           
