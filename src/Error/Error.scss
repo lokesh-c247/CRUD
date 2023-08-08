@@ -1,0 +1,24 @@
+$height : 100vh;
+$width : 100vw;
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 5rem;
+
+.errorCard-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $bgcolor;
+    height: $height;
+    width: $width;
+}
+
+.errorCard{ 
+    border: 2px solid red;
+    height: $height;
+    width: 50vw;
+    h1{
+        color: #f00000;
+        font-size: $fontsize;
+    }
+}
