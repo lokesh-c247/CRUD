@@ -1,0 +1,12 @@
+.form{
+    margin-inline: 1rem;
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn{
+    width: 9rem;
+    float: center;
+}

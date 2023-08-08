@@ -1,0 +1,27 @@
+.logo{
+    width: 250px;
+    height: 110px;
+    border-radius: 15px;
+}
+
+.header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    padding: 2rem;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+ul li {
+    list-style: none;
+    font-size: larger;
+    color: black;
+}
