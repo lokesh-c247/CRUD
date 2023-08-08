@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Create.module.css";
+import { useNavigate } from 'react-router-dom';
 
 import {
     FormControl,
@@ -13,6 +14,8 @@ import { isJsonString } from "../../utility";
 const Create = () => {
 
     const [usersData, setUsersData] = useState([]);
+    const navigate = useNavigate();
+
 
 
     useEffect(() => {
@@ -34,8 +37,8 @@ const Create = () => {
     const handleSubmit = () => {
         const updatedData = [...usersData, formData]
         setUsersData(updatedData)
-
         localStorage.setItem("usersData", JSON.stringify(updatedData))
+        navigate('/', { replace: true });
 
     }
 

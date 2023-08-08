@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import styles from "../Edit/Edit.module.css";
+import { useNavigate } from 'react-router-dom';
 
 import {
     FormControl,
@@ -14,6 +15,7 @@ import { isJsonString } from "../../utility";
 
 
 const Update = () => {
+    const navigate = useNavigate();
     const location = useLocation();
     const userData = location?.state;
     const [wholeData , setWholeData] = useState([])
@@ -28,6 +30,7 @@ const Update = () => {
 
         wholeData?.splice(userData?.id-1, 1 ,editableData)
         localStorage.setItem("usersData" , JSON.stringify(wholeData))
+        navigate('/', { replace: true });
    }
   
    const handleChange = (e) => {
